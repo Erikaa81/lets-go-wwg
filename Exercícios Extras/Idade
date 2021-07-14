@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+
+	t := time.Now()
+	nascimento := 1950
+	idade := t.Year() - nascimento
+
+	fmt.Scan("%s", &t)
+	fmt.Scan("%v", &nascimento)
+	fmt.Scan("%d", &idade)
+
+	fmt.Printf("Hoje %s a pessoa que nasceu em %v tem %d anos.",
+		t, nascimento, idade)
+}
