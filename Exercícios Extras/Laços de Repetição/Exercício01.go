@@ -1,3 +1,4 @@
+//Exercício 01
 //No Exercício #06 da seção "Exercícios", usamos for range para percorrer uma slice de string que representava uma lista de itens
 //a comprar no mercado. Agora, resolva o mesmo exercício usando a sintaxe básica da instrução for.
 
