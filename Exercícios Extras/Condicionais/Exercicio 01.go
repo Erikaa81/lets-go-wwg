@@ -12,14 +12,14 @@ func main() {
 	switch {
 	case a > b && a > c:
 
-		fmt.Printf("A variavel 'a' tem o mairo valor\n")
+		fmt.Printf("A variavel 'a' tem o maior valor\n")
 		return
 	case b > c && b > a:
 
-		fmt.Printf("A variavel 'b' tem o mairo valor\n")
+		fmt.Printf("A variavel 'b' tem o maior valor\n")
 		return
 
 	default:
-		fmt.Printf("A variavel 'c' tem o mairo valor\n")
+		fmt.Printf("A variavel 'c' tem o maior valor\n")
 	}
 }

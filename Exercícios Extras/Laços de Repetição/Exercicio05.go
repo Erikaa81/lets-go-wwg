@@ -14,8 +14,8 @@ func leiaLinha() string {
 }
 func main() {
 	var texto string
-	texto = leiaLinha()
 	fmt.Println("Digite um texto:")
+	texto = leiaLinha()
 
 	letras := make(map[string]int)
 

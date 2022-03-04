@@ -1,7 +1,8 @@
-
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -16,7 +17,7 @@ func main() {
 	contagem := make(map[string]int)
 	{
 
-		for  indice, valor := range cidade {
+		for indice, valor := range cidade {
 			if valor == "Brasil" {
 				contagem["Brasil"] = contagem["Brasil"] + 1
 			} else if valor == "Itália" {
@@ -25,7 +26,7 @@ func main() {
 				contagem["Uruguai"] = contagem["Uruguai"] + 1
 			}
 			{
-	
+
 				fmt.Println(indice, valor, contagem)
 			}
 
