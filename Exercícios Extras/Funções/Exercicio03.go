@@ -13,7 +13,7 @@ type Venda struct {
 	data         string
 }
 
-func yyyymain() {
+func main() {
 
 	venda1 := Venda{valor: 100, nomeVendedor: "Maria", data: "01/02"}
 	venda2 := Venda{valor: 70, nomeVendedor: "João", data: "01/02"}

@@ -1,24 +1,22 @@
-//Construa uma função que receba uma palavra ou frase e uma letra, e retorne o número de ocorrências da letra informada.
-
+//Dada a seguinte função, o que devemos escrever para que ela printe “inteiro” caso o parâmetro recebido seja int32 e
+//“ponto flutuante” caso o parâmetro seja float32?
+//Caso o tipo não seja reconhecido, a função deverá retornar um erro informando o ocorrido.
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func main() {
-
-	var frase = "Estudar é preciso"
-	var letra = "r"
-	var ocorrencia = contarLetra(frase, letra)
-
-	fmt.Printf(" A letra %s foi encontrada %d vezes na frase '%s'", letra, ocorrencia, frase)
+func printType(i interface{}) {
+	switch i.(type) {
+	case int32:
+		fmt.Println("Tipo: int, Valor:", i.(int32))
+	case float32:
+		fmt.Println("\nTipo: float32, Valor: ", i.(float32))
+	default:
+		fmt.Println("\nTipo não encontrado")
+	}
 }
-
-func contarLetra(frase string, letra string) int {
-
-	var final = strings.Count(frase, letra)
-
-	return final
+func main() {
+	printType(int32(2))
+	printType(float32(2.23))
+	printType(int(2))
 }
